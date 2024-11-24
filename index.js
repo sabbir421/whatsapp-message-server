@@ -5,8 +5,10 @@ const multer = require("multer");
 const xlsx = require("xlsx");
 const { Server } = require("socket.io");
 const { Client, LocalAuth } = require("whatsapp-web.js");
+dotenv.config();
+const url = process.env.APP_URL;
+console.log(process.env.PORT);
 
-const url = process.env.URL;
 dotenv.config();
 
 const app = express();
